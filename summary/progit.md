@@ -16,7 +16,7 @@
     - 可以稍微筆記一下 git config 參數存放的檔案位置，或者記得有這件事以後來這找。
     - 設定 email 時可以設定和 github 帳號相同的 email。([ref](https://help.github.com/articles/why-are-my-commits-linked-to-the-wrong-user/))
   - 取得說明文件  
-    git help。
+    `git help`。
   - 摘要
 - Git 基礎
   - 取得一個 Git 倉儲  
@@ -33,7 +33,7 @@
     指令 `git log` 的各種選項、參數應用，可以簡略看過，有需求再來這找找。
   - 復原  
     - `git commit` 選項 `--amend`: 建一個新的 commit 取代當前最新 commit。
-    - 指令 `git reset HEAD <file>`: 將檔案移出預存區。
+    - 指令 `git reset HEAD <file>`: 將檔案移出 staging area。
     - 指令 `git checkout -- <file>`: 捨棄工作目錄的修改。
   - 與遠端協同工作  
     - remote repository: 存在其他某處的版本庫。
@@ -45,12 +45,24 @@
     簡單看過，有需要可以自行設定。
   - 總結
 - 使用 Git 分支
-  - 簡述分支
-  - 分支和合併的基本用法
-  - 分支管理
-  - 分支工作流程
-  - 遠端分支
-  - 衍合
+  - 簡述分支  
+    - 分支，`branch`
+    - 很難懂，不過看不懂也不影響使用 git XD。簡單說 branch 是一個指向某提交的可移動指標。
+  - 分支和合併的基本用法  
+    - 指令 `git branch`: 列出 branch。
+    - 指令 `git branch <branch-name>`: 以 <branch-name> 建一個新的 branch。
+    - 指令 `git branch -d <branch-name>`: 刪除 <branch-name> branch。
+    - 指令 `git checkout <branch-name>`: 切換 branch。
+    - 指令 `git checkout -b <branch-name>`: 相當於 git branch <branch-name> && git checkout <branch-name>。
+    - 指令 `git merge <branch-name>`: 合併 <branch-name> 到當前 branch 中。
+  - 分支管理  
+    詳情請看 `git help branch`。
+  - 分支工作流程  
+    延伸閱讀: [Git flow 開發流程](https://ihower.tw/blog/archives/5140)，看看觀念即可，工具只是輔助而不是重點。
+  - 遠端分支  
+    重要，花點功夫理解。簡單說 branch 是一個指向某 commit 的可移動指標。
+  - 衍合  
+    - 指令 `git rebase`: 將 commits 重新套用在別的 branch 上。
   - 總結
 - 伺服器上的 Git
   - 通訊協定
