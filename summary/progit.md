@@ -1,4 +1,4 @@
-[Pro Git](https://git-scm.com/book/zh-tw/v1) 的簡易筆記，簡單說明重點、需要搭配本文服用。
+[Pro Git](https://git-scm.com/book/zh-tw/v2) 的簡易筆記，簡單說明重點、需要搭配本文服用。
 
 - 開始
   - 關於版本控制  
@@ -64,15 +64,24 @@
   - 衍合  
     - 指令 `git rebase`: 將 commits 重新套用在別的 branch 上。
   - 總結
-- 伺服器上的 Git
-  - 通訊協定
-  - 在伺服器上佈署 Git
-  - 產生你的 SSH 公鑰
-  - 設定伺服器
-  - Git 常駐程式
-  - Smart HTTP
-  - GitWeb
-  - GitLab
+- 伺服器上的 Git  
+  如果你對架設自己的伺服器沒興趣，就不用深究本章。大部分情況會使用 github 作為 git 伺服器。
+  - 通訊協定  
+    常用的應該是 ssh 協議。
+  - 在伺服器上佈署 Git  
+    `bare repository` 是用來儲存 git repository 相關資訊的。
+  - 產生你的 SSH 公鑰  
+    文末有[鏈結](https://help.github.com/articles/connecting-to-github-with-ssh/)可以看如何使用 ssh 連接到 github。
+  - 設定伺服器  
+    伺服器相關，沒興趣的話看看就好。讓其他人可以透過 ssh 取用你的 git server。
+  - Git 常駐程式  
+    伺服器相關，沒興趣的話看看就好。設定 git 協議的 daemon。
+  - Smart HTTP  
+    伺服器相關，沒興趣的話看看就好。
+  - GitWeb  
+    伺服器相關，沒興趣的話看看就好。將自己的 git server 用 web 介面表示。
+  - GitLab  
+    伺服器相關，沒興趣的話看看就好。
   - 第3方 Git 託管方案
   - 總結
 - 分散式的 Git
