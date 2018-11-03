@@ -96,9 +96,14 @@
     一些情境及指令應用。感覺大部分不是很重要。可以等有一些經驗或理解再來看。
   - Summary
 - GitHub
-  - 建立帳戶及設定
-  - 參與一個專案
-  - 維護專案
-  - Managing an organization
-  - Scripting GitHub
+  - 建立帳戶及設定  
+    自己看。
+  - 參與一個專案  
+    前面提到的整合式管理員工作流程 Integration-manager workflow 和一些 github 上的操作。
+  - 維護專案  
+    看看就好，使用時慢慢摸也行。
+  - Managing an organization  
+    有需要再看。
+  - Scripting GitHub  
+    webhook, github services 和 github api 的應用。另外 services 要沒了: [Announcing the deprecation of GitHub Services](https://developer.github.com/changes/2018-04-25-github-services-deprecation/)
   - 總結
