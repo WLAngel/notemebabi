@@ -1,14 +1,14 @@
-[Pro Git](https://git-scm.com/book/zh-tw/v2) 的簡易筆記，簡單說明重點、需要搭配本文服用。  
+[Pro Git](https://git-scm.com/book/zh-tw/v2) 的簡易導讀，請搭配本文服用。  
 這裏有 [v1](https://git-scm.com/book/zh-tw/v1)，中文支援度比 v2 高一點點，可以參考一下。  
 不過程度允許的話還是看英文比較好，畢竟 git 指令的說明書都是寫英文。
 
 - 開始
   - 關於版本控制  
-    版本控制。
+    了解一下什麼是版本控制。
   - Git 的簡史  
     故事。
   - Git 基礎要點  
-    三種狀態是重點，很重要。其他部分如果不想深入理解 git 底層的話可以簡略看過。
+    對於 git 的使用上，三種狀態的觀念很重要。其他部分如果不想深入理解 git 底層的話可以簡略看過。
   - 命令列  
     - Mac: 打開 spotlight 敲上 `terminal`
     - Windows: 開始的搜尋框敲上 `cmd` 或 `powershell`
@@ -23,22 +23,23 @@
 - Git 基礎
   - 取得一個 Git 倉儲  
     - repository 就是儲存東西的地方。
-    - 指令 `git init`: 可以將資料夾初始成 git repository。
+    - 指令 `git init`: 將資料夾初始成 git repository。
     - 指令 `git clone`: 複製一個 repository。
   - 紀錄變更到版本庫中  
     - 指令 `git status`: 檢查檔案狀態。
     - 指令 `git add`: 將檔案加至預存區(staging area)。
-    - 檔案 `.gitignore`: 忽略不需要的檔案。
+    - 檔案 `.gitignore`: 用來設定讓 git 忽略不需要的檔案。
     - 指令 `git diff`: 檢視修改。
     - 指令 `git commit`: 提交修改。
   - 檢視提交的歷史記錄  
-    指令 `git log` 的各種選項、參數應用，可以簡略看過，有需求再來這找找。
+    指令 `git log` 的各種選項、參數應用，可以簡略看過，有需求再來這找找或者是自己看 manual。
   - 復原  
     - `git commit` 選項 `--amend`: 建一個新的 commit 取代當前最新 commit。
     - 指令 `git reset HEAD <file>`: 將檔案移出 staging area。
     - 指令 `git checkout -- <file>`: 捨棄工作目錄的修改。
   - 與遠端協同工作  
     - remote repository: 存在其他某處的版本庫。
+    - `git remote` 的相關指令可以稍微玩一下，但應該多數情況下遠端只會有一個預設的 origin。
     - 指令 `git fetch`: 從遠端拉取資料。
     - 指令 `git push`: 更新遠端。
   - 標籤  
@@ -48,8 +49,8 @@
   - 總結
 - 使用 Git 分支
   - 簡述分支  
-    - 分支，`branch`
-    - 很難懂，不過看不懂也不影響使用 git XD。簡單說 branch 是一個指向某提交的可移動指標。
+    - 分支，`branch`。
+    - commit 結構可能很難懂，不過看不懂也不影響使用 git XD。簡單說 branch 是一個指向某提交的可移動指標。
   - 分支和合併的基本用法  
     - 指令 `git branch`: 列出 branch。
     - 指令 `git branch <branch-name>`: 以 <branch-name> 建一個新的 branch。
